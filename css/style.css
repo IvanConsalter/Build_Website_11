@@ -1,0 +1,125 @@
+/* VARIABLES */
+:root {
+    --primary-font: 'Roboto Mono', monospace;
+    --secondary-font: 'Roboto', sans-serif;
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1200px;
+    --radius: 0.3rem;
+    --transition: all 0.3s linear;
+}
+
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--secondary-font);
+    line-height: 1.5;
+    background-color: var(--light-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--primary-font);
+    margin-bottom: 0.6rem;
+}
+
+.current {
+    border-bottom: var(--primary-color) 1px solid;
+}
+
+.icons {
+    font-size: 2rem;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-instagram:hover {
+    color: #3f729b ;
+}
+
+/* UTILITY */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* NAVIGATION */
+.main-nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.main-nav .container {
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    align-items: center;
+    padding: 1rem;
+}
+
+.main-nav .logo {
+    width: 180px;
+}
+
+.social-links {
+    justify-self: center;
+}
+
+.social-links .icon {
+    margin-left: 1rem;
+    transition: var(--transition);
+}
+
+.links {
+    justify-self: end;
+    display: flex;
+}
+
+.links .link {
+    font-weight: bold;
+    margin-left: 1.5rem;
+    transition: var(--transition);
+    font-size: 1.2rem;
+}
+
+.links .link:hover {
+    border-bottom: var(--primary-color) 1px solid;
+}
