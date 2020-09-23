@@ -141,7 +141,7 @@ h1, h2, h3, h4 {
     background: #fff;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 12;
 }
 
 .main-nav .container {
@@ -237,6 +237,7 @@ h1, h2, h3, h4 {
     border: 1px solid var(--dark-color);
     border-radius: var(--radius);
     box-shadow: 5px 5px 10px var(--dark-color);
+    transition: var(--transition);
 }
 
 .card:hover {
@@ -250,4 +251,60 @@ h1, h2, h3, h4 {
 
 .card-text p {
     margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.main-footer {
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 2rem;
+}
+
+.main-footer .logo {
+    position: relative;
+    padding: 1rem;
+    width: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.main-footer ul a {
+    color: var(--light-color);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.footer-content .newsletter form input[type=email]{
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.footer-content .newsletter form input[type=email]:focus {
+    outline-color: var(--primary-color);
+}
+
+.footer-content .newsletter form .btn {
+    border: none;
+    cursor: pointer;
+}
+
+.list a:hover {
+    color: var(--primary-color);
+}
+
+.footer-content:last-child p {
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
 }
