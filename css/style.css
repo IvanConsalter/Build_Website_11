@@ -6,15 +6,12 @@
     --secondary-color: #f99500;
     --light-color: #f3f3f3;
     --dark-color: #333;
-    --max-width: 1200px;
-    --radius: 0.3rem;
-    --transition: all 0.3s linear;
-}
-
-.category {
     --sports-color: #f99500;
     --ent-color: #a66bbe;
     --tech-color: #009cff;
+    --max-width: 1200px;
+    --radius: 0.3rem;
+    --transition: all 0.3s linear;
 }
 
 /* GLOBAL */
@@ -115,6 +112,30 @@ h1, h2, h3, h4 {
     color: var(--light-color);
 }
 
+.btn-sports {
+    background: var(--sports-color);
+    color: var(--light-color);
+}
+
+.btn-ent {
+    background: var(--ent-color);
+    color: var(--light-color);
+}
+
+.btn-tech {
+    background: var(--tech-color);
+    color: var(--light-color);
+}
+
+.column-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.column-span-2 {
+    grid-column: 1 / span 2;
+}
+
 /* NAVIGATION */
 .main-nav {
     background: #fff;
@@ -198,4 +219,35 @@ h1, h2, h3, h4 {
 
 .showcase-text::first-letter {
     font-size: 2rem;
+}
+
+/* ARTICLES */
+.home-articles {
+    padding: 2rem 1rem;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.card {
+    border: 1px solid var(--dark-color);
+    border-radius: var(--radius);
+    box-shadow: 5px 5px 10px var(--dark-color);
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-text {
+    position: relative;
+    padding: 1rem;
+}
+
+.card-text p {
+    margin-bottom: 1rem;
 }
