@@ -107,7 +107,7 @@ h1, h2, h3, h4 {
     color: var(--dark-color);
 }
 
-.btn-dark {
+.btn-dark, .bg-dark {
     background: var(--dark-color);
     color: var(--light-color);
 }
@@ -127,13 +127,15 @@ h1, h2, h3, h4 {
     color: var(--light-color);
 }
 
-.column-2 {
+.page-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
 }
 
-.column-span-2 {
-    grid-column: 1 / span 2;
+.page-container > *:first-child {
+    grid-row: 1 / span 4;
 }
 
 /* NAVIGATION */
@@ -269,11 +271,10 @@ h1, h2, h3, h4 {
 
 .about-text {
     grid-row: 1 / span 3;
-    padding: 1rem 1rem 2rem 0;
+    padding: 0 1rem 2rem 0;
 }
 
 .join-club {
-    grid-row: 1 / span 2;
     padding: 1rem;
 }
 
@@ -283,6 +284,21 @@ h1, h2, h3, h4 {
 
 .ads img{
     width: 100%;
+}
+
+/* ARTICLE */
+.categories {
+    padding: 0.5rem;
+}
+
+.categories li {
+    border-bottom: 1px solid var(--dark-color);
+    margin: 0.5rem 0;
+}
+
+.categories li:hover {
+    position: relative;
+    left: 5px;
 }
 /* FOOTER */
 .main-footer {
